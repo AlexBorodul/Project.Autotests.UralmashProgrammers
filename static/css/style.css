@@ -1,0 +1,153 @@
+body{
+    background-color: aliceblue;
+}
+
+.message {
+    margin-bottom: 10px; 
+  }
+
+.answer{
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: pre-wrap;
+    color: #fff;
+    background: #0c42da;
+    border-radius: 12px 2px 12px 12px;
+    margin-left: 32px;
+    max-width: calc(100% - 32px);
+    align-self: flex-end;
+    width: 1000px;
+    padding-bottom:30px;
+    margin: 0 auto;
+    
+    
+}
+
+.request{
+    display: flex;
+    color: #000000;
+    background: #ffffff;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    width: 1000px;
+    max-height: calc(var(--lines) * 20px);
+    padding-bottom:30px;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+
+    
+}
+
+
+.search{
+    display: flex;
+    padding: 17px 40px 17px 20px;
+    box-sizing: border-box;
+    border: 1px solid #e6e1f5;
+    border-radius: 16px;
+    width: 1000px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    outline: none;
+    max-height: calc(var(--lines) * 20px);
+    margin: 0;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.request p{
+    margin-top:10px;
+    margin-bottom: auto;
+    margin-right: 800px;
+}
+
+.answer p {
+    margin-top:10px;
+    margin-bottom: auto;
+    margin-left: 50px;
+}
+
+.field{
+    width:100%;
+}
+
+.input{
+    margin-top: 600px;
+    display: flex;
+    flex-direction: row;
+    float:right;
+}
+
+button {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 12px 12px 12px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 320px;
+    margin-left: 20px;
+  }
+  
+button:hover {
+    background-color: #45a049;
+  }
+  
+button:active {
+    background-color: #3f9448;
+  }
+
+.input-file {
+	position: relative;
+	display: inline-block;
+}
+.input-file span {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	font-size: 14px;
+	vertical-align: middle;
+	color: rgb(255 255 255);
+	text-align: center;
+	border-radius: 4px;
+	background-color: #00ffff;
+	line-height: 22px;
+	height: 40px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border: none;
+	margin: 0;
+	transition: background-color 0.2s;
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+ 
+.input-file input[type=file]:focus + span {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+ 
+
+.input-file:hover span {
+	background-color: #006cfa;
+}
+.input-file:active span {
+	background-color: #b700ff;
+}
+ 
+
+.input-file input[type=file]:disabled + span {
+	background-color: #eee;
+}
