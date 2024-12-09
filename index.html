@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>ИИ платформа генерации автотестов</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="/static/css/style.css">
-        <script src="/static/scripts.js" defer></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class = "request">
-            <p align="left">Сгенерируй автотесты</p>
-        </div>
-        <div class = "answer">
-            <p align="right">Окей, сейчас выполню запрос...</p>
-        </div>
-        <div class="input">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИИ Платформа Генерации Автотестов</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="title">Платформа Генерации Автотестов</h1>
+    </header>
+    <main>
+        <section class="upload-section">
             <form id="uploadForm" enctype="multipart/form-data">
                 <label class="input-file">
-                    <input type="file" name="file" id="fileInput">		
+                    <input type="file" name="file" id="fileInput">
                     <span>Выберите файл</span>
                 </label>
-                <button type="button" onclick="sendFile()" method="post" class="button">Отправить</button>
+                <div class="button-wrapper">
+                    <button type="button" onclick="sendFile()" class="button">Отправить</button>
+                </div>
             </form>
-        </div>
-        <div id="responseContainer" class="answer">
-            <p>Ответ сервера появится здесь</p>
-        </div>
-    </body>
+        </section>
+        <section id="responseContainer" class="answer">
+            <p class="responseAnswer">Ответ сервера появится здесь</p>
+        </section>
+    </main>
     <footer>
-
+        <p>Uralmash Programmers</p>
     </footer>
+</body>
 </html>
