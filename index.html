@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИИ Платформа Генерации Автотестов</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="title">Платформа Генерации Автотестов</h1>
+    </header>
+    <main>
+        <section class="upload-section">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <label class="input-file">
+                    <input type="file" name="file" id="fileInput">
+                    <span>Выберите файл</span>
+                </label>
+                <div class="button-wrapper">
+                    <button type="button" onclick="sendFile()" class="button">Отправить</button>
+                </div>
+            </form>
+        </section>
+        <section id="responseContainer" class="answer">
+            <p class="responseAnswer">Ответ сервера появится здесь</p>
+        </section>
+    </main>
+    <footer>
+        <p>Uralmash Programmers</p>
+    </footer>
+</body>
+</html>
