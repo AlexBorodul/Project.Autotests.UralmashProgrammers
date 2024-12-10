@@ -1,10 +1,3 @@
-# from docx_parser import DocumentParser
-#
-# infile = 'test_fsd.docx'
-# doc = DocumentParser(infile)
-# for _type, item in doc.parse():
-#     print(_type, item)
-
 from docx_parser_converter.docx_to_txt.docx_to_txt_converter import DocxToTxtConverter
 from docx_parser_converter.docx_parsers.utils import read_binary_from_file_path
 

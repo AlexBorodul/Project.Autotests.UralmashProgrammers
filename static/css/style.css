@@ -25,7 +25,7 @@ main {
     padding: 20px;
 }
 
-/* Блок загрузки файлов */
+
 .upload-section {
     background: white;
     padding: 30px;
@@ -73,7 +73,7 @@ main {
     display: none;
 }
 
-/* Кнопка отправки */
+
 button {
     padding: 12px 20px;
     font-size: 16px;
@@ -94,7 +94,7 @@ button:active {
     background-color: #3f9448;
 }
 
-/* Ответ сервера */
+
 .answer{
     display: flex;
     font-size: 16px;
@@ -117,7 +117,7 @@ button:active {
     margin-left: 20px;
 }
 
-/* Футер */
+
 footer {
     text-align: center;
     padding: 10px 0;
