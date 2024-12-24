@@ -1,10 +1,9 @@
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI, File, UploadFile, Request
 from fastapi.responses import JSONResponse, FileResponse
 from GigaChatAPI import giga_api
 from fastapi.staticfiles import StaticFiles
 from GigaChatAPI import PROMPTS
 import uvicorn
-import os
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
@@ -27,6 +26,19 @@ async def upload_file(file: UploadFile = File(...)):
             response = giga_api(PROMPTS[i], temp_path)
             responses.append(response.content)
         return JSONResponse(content={"message": responses})
+    except Exception as e:
+        return JSONResponse(content={"error": str(e)}, status_code=500)
+
+
+@app.post("/chat")
+async def chat_with_gigachat(request: Request):
+    try:
+        data = await request.json()
+        user_message = data.get("message")
+        if not user_message:
+            return JSONResponse(content={"error": "Сообщение не может быть пустым."}, status_code=400)
+        response = giga_api(user_message, chat_with_gigachat=True)
+        return JSONResponse(content={"reply": response.content})
     except Exception as e:
         return JSONResponse(content={"error": str(e)}, status_code=500)
 

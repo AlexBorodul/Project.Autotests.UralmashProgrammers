@@ -44,16 +44,18 @@ PROMPTS = ['Прочитай документ FSD, удели особенное
            'Используя составленные тобой тесты, составь код автотестов, используя фреймворк Cucumber']
 
 
-def giga_api(task, temp_path=""):
-    prompt_file = ""
-    if temp_path != "":
-        parser = ParserToTxt(temp_path)
-        prompt_file = parser.convert()
-    prompt = (
-            task +
-            '\n'
-            + prompt_file
-    )
+def giga_api(task="", temp_path="", chat_with_gigachat=False):
+    if chat_with_gigachat:
+        prompt = task
+    else:
+        prompt_file = ""
+        if temp_path != "":
+            prompt_file = ParserToTxt(temp_path).convert()
+        prompt = (
+                task +
+                '\n'
+                + prompt_file
+        )
     messages.append(HumanMessage(content=prompt))
     response = chat.invoke(messages)
     messages.append(response)

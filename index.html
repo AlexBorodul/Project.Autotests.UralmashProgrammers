@@ -16,6 +16,9 @@
     </header>
     <main>
         <section class="upload-section">
+            <label>
+                <input type="checkbox" id="directModeToggle" onchange="toggleMode()"> Общение с ИИ напрямую
+            </label>
             <form id="uploadForm" enctype="multipart/form-data">
                 <label class="input-file">
                     <input type="file" name="file" id="fileInput">
@@ -23,6 +26,12 @@
                 </label>
                 <div class="button-wrapper">
                     <button type="button" onclick="sendFile()" class="button">Отправить</button>
+                </div>
+            </form>
+            <form id="chatForm" style="display: none;">
+                <textarea id="chatInput" placeholder="Введите текст для общения с ИИ"></textarea>
+                <div class="button-wrapper">
+                    <button type="button" onclick="sendChat()" class="button">Отправить</button>
                 </div>
             </form>
         </section>
