@@ -25,7 +25,6 @@ main {
     padding: 20px;
 }
 
-
 .upload-section {
     background: white;
     padding: 30px;
@@ -73,7 +72,6 @@ main {
     display: none;
 }
 
-
 button {
     padding: 12px 20px;
     font-size: 16px;
@@ -94,29 +92,65 @@ button:active {
     background-color: #3f9448;
 }
 
-
-.answer{
+#responseContainer {
     display: flex;
-    font-size: 16px;
-    font-weight: 500;
-    white-space: pre-wrap;
-    color: #fff;
-    background: #ffffff;
-    border-radius: 12px 2px 12px 12px;
-    margin-left: 32px;
-    max-width: calc(100% - 32px);
-    align-self: flex-end;
-    width: 1000px;
-    padding-bottom:30px;
-    margin: 0 auto;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.chat-message {
+    display: block;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 1.5;
+}
+
+.chat-message.user {
+    text-align: right;
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.chat-message.bot {
+    text-align: left;
+    background-color: #e8efff;
     color: #333;
 }
 
-.responseAnswer {
-    margin-left: 20px;
+.chat-message ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
 }
 
+.chat-message ul li {
+    margin-bottom: 5px;
+}
+
+#downloadDocx {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+#downloadDocx:hover {
+    background-color: #45a049;
+}
 
 footer {
     text-align: center;
