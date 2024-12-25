@@ -27,6 +27,10 @@ function appendMessage(content, sender) {
     // Добавляем сообщение в контейнер
     responseContainer.appendChild(messageElement);
 
+    if (sender === 'bot') {
+        chatResponses.push(content);
+    }
+
     // Прокручиваем вниз
     responseContainer.scrollTop = responseContainer.scrollHeight;
 }
@@ -113,3 +117,20 @@ async function sendChatMessage() {
         chatInput.value = ''; // Очищаем поле ввода
     }
 }
+
+let chatResponses = []; // Массив для хранения ответов Gigachat
+
+// Добавление ответа в массив и создание текстового файла
+function saveResponsesToFile() {
+    if (chatResponses.length === 0) {
+        alert('Нет данных для сохранения.');
+        return;
+    }
+
+    const blob = new Blob([chatResponses.join('\n\n')], { type: 'text/plain' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'chat_responses.txt';
+    link.click();
+}
+
