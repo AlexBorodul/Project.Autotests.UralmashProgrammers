@@ -31,6 +31,12 @@ function appendMessage(content, sender) {
         chatResponses.push(content);
     }
 
+    // Если это первый ответ бота, добавляем галочку "Переключиться на чат"
+    if (!chatToggleAdded) {
+        addChatToggle();
+        chatToggleAdded = true;
+    }
+
     // Прокручиваем вниз
     responseContainer.scrollTop = responseContainer.scrollHeight;
 }
@@ -68,6 +74,19 @@ async function sendFile() {
         console.error('Ошибка:', error);
         alert('Произошла ошибка при отправке файла. Проверьте консоль для подробностей.');
     }
+}
+
+// Функция для добавления галочки "Переключиться на чат"
+function addChatToggle() {
+    const toggleContainer = document.getElementById('toggleContainer');
+
+    const chatToggleLabel = document.createElement('label');
+    chatToggleLabel.innerHTML = `
+        <input type="checkbox" id="chatToggle" onchange="toggleChatMode()">
+        Переключиться на чат
+    `;
+
+    toggleContainer.appendChild(chatToggleLabel);
 }
 
 function toggleChatMode() {
@@ -119,6 +138,7 @@ async function sendChatMessage() {
 }
 
 let chatResponses = []; // Массив для хранения ответов Gigachat
+let chatToggleAdded = false; // Флаг для проверки, добавлена ли галочка
 
 // Добавление ответа в массив и создание текстового файла
 function saveResponsesToFile() {
@@ -134,3 +154,15 @@ function saveResponsesToFile() {
     link.click();
 }
 
+// Переключение режима чата
+function toggleChatMode() {
+    const chatToggle = document.getElementById('chatToggle');
+    const chatInterface = document.getElementById('chatInterface');
+
+    // Отображаем или скрываем интерфейс чата в зависимости от состояния галочки
+    if (chatToggle.checked) {
+        chatInterface.style.display = 'block';
+    } else {
+        chatInterface.style.display = 'none';
+    }
+}

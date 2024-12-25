@@ -33,9 +33,7 @@
             <p class="responseAnswer">Ответ сервера появится здесь</p>
         </section>
         <section>
-            <label for="chatToggle">
-                <input type="checkbox" id="chatToggle" onclick="toggleChatMode()"> Переключиться на чат
-            </label>
+            <div id="toggleContainer"></div>
             <div id="chatInterface" style="display: none;">
                 <textarea id="chatInput" placeholder="Введите ваше сообщение"></textarea>
                 <button onclick="sendChatMessage()">Отправить сообщение</button>
