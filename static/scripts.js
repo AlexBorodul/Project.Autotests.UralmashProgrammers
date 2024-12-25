@@ -1,17 +1,36 @@
 function appendMessage(content, sender) {
     const responseContainer = document.getElementById('responseContainer');
 
-    // Создаём новый элемент для сообщения
-    const messageElement = document.createElement('p');
-    messageElement.classList.add('chat-message', sender); // Добавляем класс в зависимости от отправителя
-    messageElement.textContent = content;
+    // Создаём общий контейнер для сообщения
+    const messageElement = document.createElement('div');
+    messageElement.classList.add('chat-message', sender);
+
+    // Если контент - это массив, выводим как список
+    if (Array.isArray(content)) {
+        const ul = document.createElement('ul');
+        content.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = item;
+            ul.appendChild(li);
+        });
+        messageElement.appendChild(ul);
+    } else if (typeof content === 'string') {
+        // Обработка перевода строк и табуляции
+        const formattedContent = content
+            .replace(/\n/g, '<br>') // Перевод строки -> <br>
+            .replace(/\t/g, '&nbsp;&nbsp;&nbsp;&nbsp;'); // Табуляция -> 4 пробела
+
+        // Добавляем в div как HTML
+        messageElement.innerHTML = formattedContent;
+    }
 
     // Добавляем сообщение в контейнер
     responseContainer.appendChild(messageElement);
 
-    // Прокручиваем вниз, чтобы видеть последнее сообщение
+    // Прокручиваем вниз
     responseContainer.scrollTop = responseContainer.scrollHeight;
 }
+
 
 async function sendFile() {
     const fileInput = document.getElementById('fileInput');

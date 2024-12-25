@@ -94,37 +94,47 @@ button:active {
 
 #responseContainer {
     display: flex;
-    flex-direction: column; /* Сообщения выводятся в столбик */
-    gap: 20px; /* Расстояние между сообщениями */
-    padding: 15px;
-    background: #ffffff;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    color: #333;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 20px auto;
-    overflow: auto; /* Скроллинг при большом количестве сообщений */
+    overflow-y: auto;
+    word-wrap: break-word;
 }
 
 .chat-message {
+    display: block;
+    background-color: #f1f1f1;
     padding: 10px;
     border-radius: 8px;
-    word-wrap: break-word;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /*margin: 0; *//* Убираем лишние отступы */
+    line-height: 1.5;
 }
 
 .chat-message.user {
+    text-align: right;
     background-color: #d1e7dd;
     color: #0f5132;
-    align-self: flex-start; /* Сообщения пользователя выравниваются в начале строки */
 }
 
 .chat-message.bot {
-    background-color: #f8d7da;
-    color: #842029;
-    align-self: flex-end;
+    text-align: left;
+    background-color: #e8efff;
+    color: #333;
+}
+
+.chat-message ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.chat-message ul li {
+    margin-bottom: 5px;
 }
 
 footer {
