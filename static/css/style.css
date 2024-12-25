@@ -25,7 +25,6 @@ main {
     padding: 20px;
 }
 
-
 .upload-section {
     background: white;
     padding: 30px;
@@ -73,7 +72,6 @@ main {
     display: none;
 }
 
-
 button {
     padding: 12px 20px;
     font-size: 16px;
@@ -94,29 +92,40 @@ button:active {
     background-color: #3f9448;
 }
 
-
-.answer{
+#responseContainer {
     display: flex;
-    font-size: 16px;
-    font-weight: 500;
-    white-space: pre-wrap;
-    color: #fff;
+    flex-direction: column; /* Сообщения выводятся в столбик */
+    gap: 20px; /* Расстояние между сообщениями */
+    padding: 15px;
     background: #ffffff;
-    border-radius: 12px 2px 12px 12px;
-    margin-left: 32px;
-    max-width: calc(100% - 32px);
-    align-self: flex-end;
-    width: 1000px;
-    padding-bottom:30px;
-    margin: 0 auto;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     color: #333;
+    width: 100%;
+    max-width: 1500px;
+    margin: 20px auto;
+    overflow: auto; /* Скроллинг при большом количестве сообщений */
 }
 
-.responseAnswer {
-    margin-left: 20px;
+.chat-message {
+    padding: 10px;
+    border-radius: 8px;
+    word-wrap: break-word;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /*margin: 0; *//* Убираем лишние отступы */
 }
 
+.chat-message.user {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    align-self: flex-start; /* Сообщения пользователя выравниваются в начале строки */
+}
+
+.chat-message.bot {
+    background-color: #f8d7da;
+    color: #842029;
+    align-self: flex-end;
+}
 
 footer {
     text-align: center;
