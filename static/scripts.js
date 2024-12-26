@@ -44,6 +44,7 @@ function appendMessage(content, sender) {
 
 async function sendFile() {
     const fileInput = document.getElementById('fileInput');
+//    const fileFormat = document.getElementById("fileFormat").value;
     const file = fileInput.files[0];
 
     if (!file) {
@@ -53,6 +54,7 @@ async function sendFile() {
 
     const formData = new FormData();
     formData.append('file', file);
+//    formData.append("format", fileFormat);
 
     try {
         const response = await fetch('http://127.0.0.1:10000/', {
