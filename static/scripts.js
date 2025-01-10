@@ -44,20 +44,21 @@ function appendMessage(content, sender) {
 
 async function sendFile() {
     const fileInput = document.getElementById('fileInput');
-//    const fileFormat = document.getElementById("fileFormat").value;
     const file = fileInput.files[0];
 
     if (!file) {
         alert('Пожалуйста, выберите файл.');
         return;
     }
-
+    const allowedExtensions = ['application/pdf', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+    if (!allowedExtensions.includes(file.type)) {
+        alert('Поддерживаются только файлы форматов PDF и DOCX.');
+        return;
+    }
     const formData = new FormData();
     formData.append('file', file);
-//    formData.append("format", fileFormat);
-
     try {
-        const response = await fetch('http://127.0.0.1:10000/', {
+        const response = await fetch('http://127.0.0.1:10000/upload-file', {
             method: 'POST',
             body: formData,
         });
@@ -68,7 +69,6 @@ async function sendFile() {
         }
 
         const result = await response.json();
-
         // Добавляем сообщение пользователя (имя файла) и ответы сервера
         appendMessage(file.name, 'user');
         result.message.forEach(msg => appendMessage(msg, 'bot'));

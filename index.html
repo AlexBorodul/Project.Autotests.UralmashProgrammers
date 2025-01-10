@@ -24,6 +24,35 @@
                 <div class="button-wrapper">
                     <button type="button" onclick="sendFile()" class="button">Отправить</button>
                 </div>
+                <div id="fileName">Название файла появится здесь</div>
+                <div id="errorMessage"></div>
+                <script>
+                    // Добавляем обработчик для выбора файла
+                    document.getElementById("fileInput").addEventListener("change", function (event) {
+                        const file = event.target.files[0]; // Получаем выбранный файл
+                        const fileNameElement = document.getElementById("fileName"); // Элемент для отображения имени файла
+                        const errorMessageElement = document.getElementById("errorMessage"); // Элемент для отображения ошибки
+
+                        if (file) {
+                            const fileName = file.name; // Имя файла
+                            const fileExtension = fileName.split('.').pop().toLowerCase(); // Расширение файла
+
+                            if (fileExtension === "docx" || fileExtension === "pdf") {
+                                // Устанавливаем имя файла и очищаем сообщение об ошибке
+                                fileNameElement.textContent = `Выбранный файл: ${fileName}`;
+                                errorMessageElement.textContent = "";
+                            } else {
+                                // Показываем сообщение об ошибке и очищаем имя файла
+                                errorMessageElement.textContent = "Требуется файл с другим форматом (.docx или .pdf)";
+                                fileNameElement.textContent = "";
+                            }
+                        } else {
+                            // Сбрасываем текст, если файл не выбран
+                            fileNameElement.textContent = "";
+                            errorMessageElement.textContent = "";
+                        }
+                    });
+                </script>
             </form>
         </section>
         <div class="button-wrapper">

@@ -1,30 +1,46 @@
-from fastapi import FastAPI, File, UploadFile, Request
+from pathlib import Path
+from fastapi import FastAPI, File, UploadFile, Request, HTTPException
 from fastapi.responses import JSONResponse, FileResponse
 from GigaChatAPI import giga_api
+from pdf2docx_converter import pdf_to_docx
+import os
 from fastapi.staticfiles import StaticFiles
 from GigaChatAPI import PROMPTS
 import uvicorn
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
-responses = []
-
+BASE_DIR = Path(__file__).resolve().parent
+UPLOAD_DIR = BASE_DIR / "tmp"
+UPLOAD_DIR.mkdir(exist_ok=True)
 
 @app.get("/")
 async def main():
     return FileResponse("index.html")
 
 
-@app.post("/")
+@app.post("/upload-file")
 async def upload_file(file: UploadFile = File(...)):
     try:
-        content = await file.read()
-        temp_path = f"tmp/{file.filename}"
-        with open(temp_path, "wb") as f:
-            f.write(content)
+        responses = []
+        file_ext = os.path.splitext(file.filename)[1].lower()
+        if file_ext not in [".pdf", ".docx"]:
+            raise HTTPException(status_code=400, detail="Файл должен быть формата PDF или DOCX")
+        temp_path = UPLOAD_DIR / file.filename
+        with open(temp_path, "wb") as temp_file:
+            temp_file.write(file.file.read())
+        if file_ext == ".pdf":
+            docx_path = temp_path.with_suffix(".docx")
+            try:
+                pdf_to_docx(str(temp_path), str(docx_path))
+            except Exception as e:
+                raise HTTPException(status_code=500, detail=f"Ошибка конвертации PDF: {str(e)}")
+            temp_path.unlink()
+            temp_path = docx_path
         for i in range(len(PROMPTS)):
             response = giga_api(PROMPTS[i], temp_path)
             responses.append(response.content)
+        temp_path.unlink()
         return JSONResponse(content={"message": responses})
     except Exception as e:
         return JSONResponse(content={"error": str(e)}, status_code=500)
