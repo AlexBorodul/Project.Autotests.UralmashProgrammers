@@ -165,21 +165,18 @@ button:active {
     transition: all 0.3s ease-in-out;
 }
 
-/* Изменения при фокусе */
 #chatInput:focus {
-    border-color: #4CAF50; /* Цвет рамки при фокусе */
+    border-color: #4CAF50;
     box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
 }
 
-/* Placeholder (текст-заполнитель) */
 #chatInput::placeholder {
     color: #aaa;
 }
 
-/* Дополнительное оформление для устройства с маленькими экранами */
 @media (max-width: 600px) {
     #chatInput {
-        width: 90%; /* Уменьшение ширины для мобильных */
+        width: 90%;
         padding: 10px 15px;
         font-size: 14px;
     }
