@@ -1,11 +1,10 @@
 from pathlib import Path
 from fastapi import FastAPI, File, UploadFile, Request, HTTPException
 from fastapi.responses import JSONResponse, FileResponse
-from GigaChatAPI import giga_api
 from pdf2docx_converter import pdf_to_docx
 import os
+from GigaChatAPI import giga_api, PROMPTS
 from fastapi.staticfiles import StaticFiles
-from GigaChatAPI import PROMPTS
 import uvicorn
 
 app = FastAPI()
@@ -13,6 +12,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 BASE_DIR = Path(__file__).resolve().parent
 UPLOAD_DIR = BASE_DIR / "tmp"
 UPLOAD_DIR.mkdir(exist_ok=True)
+
 
 @app.get("/")
 async def main():
