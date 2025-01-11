@@ -90,7 +90,7 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{include = ""}]
+packages = [{include = "project"}]
 
 
 [build-system]
