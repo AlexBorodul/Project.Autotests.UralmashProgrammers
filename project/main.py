@@ -8,7 +8,7 @@ from fastapi.staticfiles import StaticFiles
 import uvicorn
 
 app = FastAPI()
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/project/static", StaticFiles(directory="static"), name="static")
 BASE_DIR = Path(__file__).resolve().parent
 UPLOAD_DIR = BASE_DIR / "tmp"
 UPLOAD_DIR.mkdir(exist_ok=True)
@@ -61,5 +61,5 @@ async def chat_with_gigachat(request: Request):
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
-    host = os.environ.get("IP")
+    host = os.environ.get("HOST")
     uvicorn.run("main:app", host=host, port=port)
