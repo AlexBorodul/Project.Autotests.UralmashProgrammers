@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c27d05a4-14f2-4c36-b2ad-551797449483" name="Changes" comment="Финальный коммит - доделал справку по использованию, убрал служебные комментарии, привёл код в порядок">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Frontend.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Project.Autotests.UralmashProgrammers.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GigaChatAPI.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docxparser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdf2docx_converter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/scripts.js" beforeDir="false" />
+    <list default="true" id="c27d05a4-14f2-4c36-b2ad-551797449483" name="Changes" comment="Перенос на poetry для более удобного деплоя">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,21 +37,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Python.docxparser.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "poetry__instead__pip",
-    "last_opened_file_path": "D:/УРФУ/Проект Автотесты/2 КТ/Frontend",
-    "settings.editor.selected.configurable": "proofread"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Python.docxparser.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;poetry__instead__pip&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/УРФУ/Проект Автотесты/2 КТ/Frontend&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;proofread&quot;
   },
-  "keyToStringList": {
-    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
+  &quot;keyToStringList&quot;: {
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.main">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Frontend" />
@@ -308,7 +293,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736548721134</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Перенос на poetry для более удобного деплоя">
+      <option name="closed" value="true" />
+      <created>1736612643524</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1736612643524</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Перенос на poetry для более удобного деплоя">
+      <option name="closed" value="true" />
+      <created>1736612748915</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1736612748915</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -380,6 +381,7 @@
     <MESSAGE value="Добавил парсер pdf файлов, привёл в порядок сохранение временных файлов, а также сохранение ответов на запросы" />
     <MESSAGE value="Добавил прямое указание файла, а также ограничение на формат загрузки файла" />
     <MESSAGE value="Финальный коммит - доделал справку по использованию, убрал служебные комментарии, привёл код в порядок" />
-    <option name="LAST_COMMIT_MESSAGE" value="Финальный коммит - доделал справку по использованию, убрал служебные комментарии, привёл код в порядок" />
+    <MESSAGE value="Перенос на poetry для более удобного деплоя" />
+    <option name="LAST_COMMIT_MESSAGE" value="Перенос на poetry для более удобного деплоя" />
   </component>
 </project>
