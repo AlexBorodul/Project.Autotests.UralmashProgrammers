@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c27d05a4-14f2-4c36-b2ad-551797449483" name="Changes" comment="Починил pyproject.toml">
+    <list default="true" id="c27d05a4-14f2-4c36-b2ad-551797449483" name="Changes" comment="Починил static файлы">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -384,7 +383,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736627757044</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Починил static файлы">
+      <option name="closed" value="true" />
+      <created>1736628635675</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1736628635675</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -462,6 +469,7 @@
     <MESSAGE value="Поменял адрес хоста для интеграции с render" />
     <MESSAGE value="Подготовил poetry для интеграции с render" />
     <MESSAGE value="Починил pyproject.toml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Починил pyproject.toml" />
+    <MESSAGE value="Починил static файлы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Починил static файлы" />
   </component>
 </project>
