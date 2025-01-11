@@ -8,10 +8,11 @@ from fastapi.staticfiles import StaticFiles
 import uvicorn
 
 app = FastAPI()
-app.mount("/project/static", StaticFiles(directory="static"), name="static")
 BASE_DIR = Path(__file__).resolve().parent
+STATIC_DIR = os.path.join(BASE_DIR, "static")
 UPLOAD_DIR = BASE_DIR / "tmp"
 UPLOAD_DIR.mkdir(exist_ok=True)
+app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 
 @app.get("/")

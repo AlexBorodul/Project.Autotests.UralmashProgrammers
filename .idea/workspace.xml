@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c27d05a4-14f2-4c36-b2ad-551797449483" name="Changes" comment="Поменял адрес хоста для интеграции с render">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+    <list default="true" id="c27d05a4-14f2-4c36-b2ad-551797449483" name="Changes" comment="Починил pyproject.toml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GigaChatAPI.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docxparser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdf2docx_converter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -377,7 +368,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736626970837</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Подготовил poetry для интеграции с render">
+      <option name="closed" value="true" />
+      <created>1736627662601</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1736627662601</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Починил pyproject.toml">
+      <option name="closed" value="true" />
+      <created>1736627757044</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1736627757044</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -453,6 +460,8 @@
     <MESSAGE value="commit" />
     <MESSAGE value="Попытка починит гит 3" />
     <MESSAGE value="Поменял адрес хоста для интеграции с render" />
-    <option name="LAST_COMMIT_MESSAGE" value="Поменял адрес хоста для интеграции с render" />
+    <MESSAGE value="Подготовил poetry для интеграции с render" />
+    <MESSAGE value="Починил pyproject.toml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Починил pyproject.toml" />
   </component>
 </project>
