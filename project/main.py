@@ -60,5 +60,4 @@ async def chat_with_gigachat(request: Request):
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
-    uvicorn.run(app, port=port)
+    uvicorn.run(app, port=10000)

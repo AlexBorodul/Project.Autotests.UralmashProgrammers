@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01d16711-d9fb-4c2b-b287-7f27f2f0f497" name="Changes" comment="">
+    <list default="true" id="c27d05a4-14f2-4c36-b2ad-551797449483" name="Changes" comment="Перенос на poetry для более удобного деплоя">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +41,10 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
     &quot;Python.docxparser.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;poetry__instead__pip&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/УРФУ/Проект Автотесты/2 КТ/Frontend&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;proofread&quot;
   },
@@ -149,8 +148,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.docxparser" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.docxparser" />
@@ -167,7 +166,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="01d16711-d9fb-4c2b-b287-7f27f2f0f497" name="Changes" comment="" />
+      <changelist id="c27d05a4-14f2-4c36-b2ad-551797449483" name="Changes" comment="" />
       <created>1732781155409</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
