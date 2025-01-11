@@ -63,5 +63,4 @@ async def chat_with_gigachat(request: Request):
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     host = os.environ.get("HOST")
-    uvicorn.run("main:app", host=host, port=port, ssl_certfile=os.path.join(BASE_DIR, "cert.pem"),
-                ssl_keyfile=os.path.join(BASE_DIR, "key.pem"))
+    uvicorn.run("main:app", host=host, port=port)

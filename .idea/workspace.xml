@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c27d05a4-14f2-4c36-b2ad-551797449483" name="Changes" comment="Изменил ссылки на защищённые SSl (HTTPS)">
+    <list default="true" id="c27d05a4-14f2-4c36-b2ad-551797449483" name="Changes" comment="Добавил поддержку HTTPS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/static/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/scripts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +56,11 @@
     &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Алексей\OneDrive\Документы\GitHub\Project.Autotests.UralmashProgrammers\project" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.main (1)">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Frontend" />
@@ -409,7 +413,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736630940208</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Добавил поддержку HTTPS">
+      <option name="closed" value="true" />
+      <created>1736632023556</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1736632023556</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -464,7 +476,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Отрефакторили код, выделив инициализацию api в отдельный файл, добавили недостающие файлы, переменные окружения, файлы зависимостей" />
     <MESSAGE value="Удалил случайно добавленную папку с виртуальным окружением" />
     <MESSAGE value="Изменили index.html и .css файлы - изменение интерфейса" />
     <MESSAGE value="Привёл в порядок main, отделив функциональность api giga chat в  отдельные сущности" />
@@ -489,6 +500,7 @@
     <MESSAGE value="Починил static файлы" />
     <MESSAGE value="Починил html файл" />
     <MESSAGE value="Изменил ссылки на защищённые SSl (HTTPS)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Изменил ссылки на защищённые SSl (HTTPS)" />
+    <MESSAGE value="Добавил поддержку HTTPS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил поддержку HTTPS" />
   </component>
 </project>
