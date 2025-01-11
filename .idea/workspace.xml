@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c27d05a4-14f2-4c36-b2ad-551797449483" name="Changes" comment="Починил html файл">
+    <list default="true" id="c27d05a4-14f2-4c36-b2ad-551797449483" name="Changes" comment="Изменил ссылки на защищённые SSl (HTTPS)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/static/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/static/scripts.js" afterDir="false" />
@@ -401,7 +401,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736629437530</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Изменил ссылки на защищённые SSl (HTTPS)">
+      <option name="closed" value="true" />
+      <created>1736630940208</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1736630940208</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -456,7 +464,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавили интеграцию на локальный сервер с помощью FastApi" />
     <MESSAGE value="Отрефакторили код, выделив инициализацию api в отдельный файл, добавили недостающие файлы, переменные окружения, файлы зависимостей" />
     <MESSAGE value="Удалил случайно добавленную папку с виртуальным окружением" />
     <MESSAGE value="Изменили index.html и .css файлы - изменение интерфейса" />
@@ -481,6 +488,7 @@
     <MESSAGE value="Починил pyproject.toml" />
     <MESSAGE value="Починил static файлы" />
     <MESSAGE value="Починил html файл" />
-    <option name="LAST_COMMIT_MESSAGE" value="Починил html файл" />
+    <MESSAGE value="Изменил ссылки на защищённые SSl (HTTPS)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменил ссылки на защищённые SSl (HTTPS)" />
   </component>
 </project>

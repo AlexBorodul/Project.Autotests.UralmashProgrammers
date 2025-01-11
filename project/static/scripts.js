@@ -42,7 +42,7 @@ async function sendFile() {
     const formData = new FormData();
     formData.append('file', file);
     try {
-        const response = await fetch('https://0.0.0.0:8000/upload-file', {
+        const response = await fetch('https://0.0.0.0:443/upload-file', {
             method: 'POST',
             body: formData,
         });
@@ -89,7 +89,7 @@ async function sendChatMessage() {
     }
     appendMessage(userMessage, 'user');
     try {
-        const response = await fetch('https://0.0.0.0:8000/chat', {
+        const response = await fetch('https://0.0.0.0:443/chat', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ message: userMessage }),
