@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИИ Платформа Генерации Автотестов</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        #helpButton {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        #helpButton:hover {
+            background-color: #0056b3;
+        }
+
+        #helpModal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            overflow: auto;
+        }
+
+        #helpModalContent {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            border-radius: 8px;
+            width: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        #helpModalContent h2 {
+            margin-top: 0;
+        }
+
+        #closeHelpModal {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #aaa;
+            cursor: pointer;
+        }
+
+        #closeHelpModal:hover {
+            color: black;
+        }
+
+        #errorMessage {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title">Платформа Генерации Автотестов</h1>
+    </header>
+    <main>
+        <button id="helpButton">Как пользоваться сайтом?</button>
+        <section class="upload-section">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <label class="input-file">
+                    <input type="file" name="file" id="fileInput">
+                    <span>Выберите файл</span>
+                </label>
+                <div class="button-wrapper">
+                    <button type="button" onclick="sendFile()" class="button">Отправить</button>
+                </div>
+                <div id="fileName">Название файла появится здесь</div>
+                <div id="errorMessage"></div>
+                <script>
+                    document.getElementById("fileInput").addEventListener("change", function (event) {
+                        const file = event.target.files[0]; // Получаем выбранный файл
+                        const fileNameElement = document.getElementById("fileName");
+                        const errorMessageElement = document.getElementById("errorMessage");
+
+                        if (file) {
+                            const fileName = file.name;
+                            const fileExtension = fileName.split('.').pop().toLowerCase();
+
+                            if (fileExtension === "docx" || fileExtension === "pdf") {
+                                fileNameElement.textContent = `Выбранный файл: ${fileName}`;
+                                errorMessageElement.textContent = "";
+                            } else {
+                                errorMessageElement.textContent = "Требуется файл с другим форматом (.docx или .pdf)";
+                                fileNameElement.textContent = "";
+                            }
+                        } else {
+                            // Сбрасываем текст, если файл не выбран
+                            fileNameElement.textContent = "";
+                            errorMessageElement.textContent = "";
+                        }
+                    });
+                </script>
+            </form>
+        </section>
+        <div class="button-wrapper">
+            <button onclick="saveResponsesToFile()">Сохранить ответы в формате .txt</button>
+        </div>
+        <section id="responseContainer" class="answer">
+            <p class="responseAnswer">Ответ сервера появится здесь</p>
+        </section>
+        <section>
+            <div id="toggleContainer"></div>
+            <div id="chatInterface" style="display: none;">
+                <textarea id="chatInput" placeholder="Введите ваше сообщение"></textarea>
+                <button onclick="sendChatMessage()">Отправить сообщение</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Uralmash Programmers</p>
+    </footer>
+    <div id="helpModal">
+        <div id="helpModalContent">
+            <span id="closeHelpModal">&times;</span>
+            <h2>Инструкция по использованию</h2>
+            <p>1. Выберите файл с расширением .docx или .pdf, нажав на кнопку "Выбрать файл".</p>
+            <p>2. Если формат файла неверный, появится сообщение об ошибке.</p>
+            <p>3. После выбора файла нажмите "Отправить", чтобы загрузить файл на сервер.</p>
+            <p>4. Вы получите обработанный ответ, который можно сохранить в формате .txt.</p>
+            <p>5. В случае, если необходимы пояснения/дополнительные тесты/обращение напрямую к гигачату, впишите запрос
+                в форму (чат), которая появится после обработки файла.</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById("helpButton").addEventListener("click", function () {
+            document.getElementById("helpModal").style.display = "block";
+        });
+
+        document.getElementById("closeHelpModal").addEventListener("click", function () {
+            document.getElementById("helpModal").style.display = "none";
+        });
+
+        window.addEventListener("click", function (event) {
+            const modal = document.getElementById("helpModal");
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+
+        document.getElementById("fileInput").addEventListener("change", function (event) {
+            const file = event.target.files[0];
+            const fileNameElement = document.getElementById("fileName");
+            const errorMessageElement = document.getElementById("errorMessage");
+
+            if (file) {
+                const fileName = file.name;
+                const fileExtension = fileName.split('.').pop().toLowerCase();
+
+                if (fileExtension === "docx" || fileExtension === "pdf") {
+                    fileNameElement.textContent = `Выбранный файл: ${fileName}`;
+                    errorMessageElement.textContent = "";
+                } else {
+                    errorMessageElement.textContent = "Требуется файл с другим форматом (.docx или .pdf)";
+                    fileNameElement.textContent = "";
+                }
+            } else {
+                fileNameElement.textContent = "";
+                errorMessageElement.textContent = "";
+            }
+        });
+    </script>
+</body>
+</html>

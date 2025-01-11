@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c27d05a4-14f2-4c36-b2ad-551797449483" name="Changes" comment="Финальный коммит - доделал справку по использованию, убрал служебные комментарии, привёл код в порядок">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Frontend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Project.Autotests.UralmashProgrammers.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GigaChatAPI.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docxparser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf2docx_converter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scripts.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2pTDQY46sujhZvmt9EFhbie2Hxt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Python.docxparser.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "poetry__instead__pip",
+    "last_opened_file_path": "D:/УРФУ/Проект Автотесты/2 КТ/Frontend",
+    "settings.editor.selected.configurable": "proofread"
+  },
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
+  }
+}]]></component>
+  <component name="RunManager" selected="Python.main">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Frontend" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docxparser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Frontend" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/docxparser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Project.Autotests.UralmashProgrammers" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.docxparser" />
+      <item itemvalue="Python.main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.docxparser" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.docxparser" />
+        <item itemvalue="Python.docxparser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-48aec45f0201-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17011.127" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c27d05a4-14f2-4c36-b2ad-551797449483" name="Changes" comment="" />
+      <created>1732781155409</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732781155409</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Добавили интеграцию на локальный сервер с помощью FastApi">
+      <option name="closed" value="true" />
+      <created>1732804086840</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732804086840</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Отрефакторили код, выделив инициализацию api в отдельный файл, добавили недостающие файлы, переменные окружения, файлы зависимостей">
+      <option name="closed" value="true" />
+      <created>1732914849189</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732914849189</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Удалил случайно добавленную папку с виртуальным окружением">
+      <option name="closed" value="true" />
+      <created>1732915383511</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732915383511</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Изменили index.html и .css файлы - изменение интерфейса">
+      <option name="closed" value="true" />
+      <created>1733761442107</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733761442107</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Привёл в порядок main, отделив функциональность api giga chat в  отдельные сущности">
+      <option name="closed" value="true" />
+      <created>1733765307205</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733765307205</updated>
+    </task>
+    <task id="LOCAL-00006" summary="работа с idea">
+      <option name="closed" value="true" />
+      <created>1733767242512</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733767242512</updated>
+    </task>
+    <task id="LOCAL-00007" summary="работа с .idea, работа с промптом">
+      <option name="closed" value="true" />
+      <created>1733769402629</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733769402629</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Подправил вывод ответа гигачата, добавив цикл и выделив промпты в отдельный список">
+      <option name="closed" value="true" />
+      <created>1733822632226</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733822632226</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Сделал разделение с выборомо между общением с гигачатом напрямую, и готовым промптом и загрузкой документа">
+      <option name="closed" value="true" />
+      <created>1735039626505</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735039626505</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Добавил в ветку разработку ручного чата с гигачатом">
+      <option name="closed" value="true" />
+      <created>1735143355636</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1735143355636</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Исправил вывод">
+      <option name="closed" value="true" />
+      <created>1735150042610</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735150042610</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Добавил возможность скачать вывод в формате .txt">
+      <option name="closed" value="true" />
+      <created>1735152266563</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1735152266563</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Привёл в порядок интерфейс">
+      <option name="closed" value="true" />
+      <created>1735163718264</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1735163718264</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Добавил библоитеки для реализации функционала конвертера из pdf в word">
+      <option name="closed" value="true" />
+      <created>1735209005979</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1735209005979</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Добавил парсер pdf файлов, привёл в порядок сохранение временных файлов, а также сохранение ответов на запросы">
+      <option name="closed" value="true" />
+      <created>1736459181321</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1736459181321</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Добавил прямое указание файла, а также ограничение на формат загрузки файла">
+      <option name="closed" value="true" />
+      <created>1736547599105</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1736547599105</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Добавил прямое указание файла, а также ограничение на формат загрузки файла">
+      <option name="closed" value="true" />
+      <created>1736547722015</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1736547722015</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Финальный коммит - доделал справку по использованию, убрал служебные комментарии, привёл код в порядок">
+      <option name="closed" value="true" />
+      <created>1736548721134</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1736548721134</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="pdf_2_docx_converter" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Добавили интеграцию на локальный сервер с помощью FastApi" />
+    <MESSAGE value="Отрефакторили код, выделив инициализацию api в отдельный файл, добавили недостающие файлы, переменные окружения, файлы зависимостей" />
+    <MESSAGE value="Удалил случайно добавленную папку с виртуальным окружением" />
+    <MESSAGE value="Изменили index.html и .css файлы - изменение интерфейса" />
+    <MESSAGE value="Привёл в порядок main, отделив функциональность api giga chat в  отдельные сущности" />
+    <MESSAGE value="работа с idea" />
+    <MESSAGE value="работа с .idea, работа с промптом" />
+    <MESSAGE value="Подправил вывод ответа гигачата, добавив цикл и выделив промпты в отдельный список" />
+    <MESSAGE value="Сделал разделение с выборомо между общением с гигачатом напрямую, и готовым промптом и загрузкой документа" />
+    <MESSAGE value="Добавил в ветку разработку ручного чата с гигачатом" />
+    <MESSAGE value="Исправил вывод" />
+    <MESSAGE value="Добавил возможность скачать вывод в формате .txt" />
+    <MESSAGE value="Привёл в порядок интерфейс" />
+    <MESSAGE value="Добавил библоитеки для реализации функционала конвертера из pdf в word" />
+    <MESSAGE value="Добавил парсер pdf файлов, привёл в порядок сохранение временных файлов, а также сохранение ответов на запросы" />
+    <MESSAGE value="Добавил прямое указание файла, а также ограничение на формат загрузки файла" />
+    <MESSAGE value="Финальный коммит - доделал справку по использованию, убрал служебные комментарии, привёл код в порядок" />
+    <option name="LAST_COMMIT_MESSAGE" value="Финальный коммит - доделал справку по использованию, убрал служебные комментарии, привёл код в порядок" />
+  </component>
+</project>
